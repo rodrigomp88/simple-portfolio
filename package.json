@@ -1,0 +1,17 @@
+{
+  "name": "portfolioclasico",
+  "version": "1.0.0",
+  "description": "Portfolio con nextjs tipo curriculum vitae",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootswatch": "^5.1.3",
+    "next": "^12.1.6",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  }
+}
