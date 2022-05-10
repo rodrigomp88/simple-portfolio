@@ -47,3 +47,42 @@ export const experiences = [
     from: 2020,
   },
 ];
+
+export const proyects = [
+  {
+    name: "Awesome website 1",
+    description:
+      "Lorem ipsum dolor sit enim eum asperiores a eaque rem debitis eligendi, necessitatibus libero aspernatur, nam animi quas at recusandae quo labore.",
+    image: "portfolio1",
+  },
+  {
+    name: "Awesome website 2",
+    description:
+      "Lorem ipsum dolor sit enim eum asperiores a eaque rem debitis eligendi, necessitatibus libero aspernatur, nam animi quas at recusandae quo labore.",
+    image: "portfolio2",
+  },
+  {
+    name: "Awesome website 3",
+    description:
+      "Lorem ipsum dolor sit enim eum asperiores a eaque rem debitis eligendi, necessitatibus libero aspernatur, nam animi quas at recusandae quo labore.",
+    image: "portfolio3",
+  },
+  {
+    name: "Awesome website 4",
+    description:
+      "Lorem ipsum dolor sit enim eum asperiores a eaque rem debitis eligendi, necessitatibus libero aspernatur, nam animi quas at recusandae quo labore.",
+    image: "portfolio4",
+  },
+  {
+    name: "Awesome website 5",
+    description:
+      "Lorem ipsum dolor sit enim eum asperiores a eaque rem debitis eligendi, necessitatibus libero aspernatur, nam animi quas at recusandae quo labore.",
+    image: "portfolio5",
+  },
+  {
+    name: "Awesome website 6",
+    description:
+      "Lorem ipsum dolor sit enim eum asperiores a eaque rem debitis eligendi, necessitatibus libero aspernatur, nam animi quas at recusandae quo labore.",
+    image: "portfolio6",
+  },
+];

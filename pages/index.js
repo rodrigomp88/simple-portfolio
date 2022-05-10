@@ -1,11 +1,12 @@
+import Link from "next/link";
 import Layout from "../components/layout";
-import { skills, experiences } from "../profile";
+import { skills, experiences, proyects } from "../profile";
 
 const Index = () => (
   <Layout>
     <header className="row">
       <div className="col-md-12">
-        <div className="card card-body bg-secondary text-light">
+        <div className="card card-body bg-dark text-light">
           <div className="row">
             <div className="col-md-4">
               <img src="/profile-img.jpg" alt="perfil" className="img-fluid" />
@@ -19,7 +20,9 @@ const Index = () => (
                 debitis eligendi, necessitatibus libero aspernatur, nam animi
                 quas at recusandae quo labore.
               </p>
-              <a href="rodrigo">Hire me</a>
+              <Link href="/rodrigo">
+                <a>Hire me</a>
+              </Link>
             </div>
           </div>
         </div>
@@ -28,7 +31,7 @@ const Index = () => (
 
     <div className="row py-2">
       <div className="col-md-4">
-        <div className="card bg-light">
+        <div className="card bg-dark text-light">
           <div className="card-body">
             <h1>Skills</h1>
             {skills.map(({ skill, porcentage }, i) => (
@@ -47,7 +50,7 @@ const Index = () => (
         </div>
       </div>
       <div className="col-md-8">
-        <div className="card bg-light">
+        <div className="card bg-dark text-light">
           <div className="card-body">
             <h1>Experiencia</h1>
             <ul>
@@ -61,6 +64,37 @@ const Index = () => (
                 </li>
               ))}
             </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="row">
+      <div className="col-md-12">
+        <div className="card card-body bg-dark">
+          <div className="row">
+            <div className="col-md-12">
+              <h1 className="text-center text-light">Portfolio</h1>
+            </div>
+            {proyects.map(({ name, description, image }, i) => (
+              <div className="col-md-4 py-2" key={i}>
+                <div className="card h-100">
+                  <div className="overflow">
+                    <img src={`/${image}.png`} className="card-img-top" />
+                  </div>
+                  <div className="card-body">
+                    <h3>{name}</h3>
+                    <p>{description}</p>
+                    <a href="#">Ver mas...</a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="text-center py-4">
+            <Link href="/portfolio">
+              <a className="btn btn-outline-light">More proyects</a>
+            </Link>
           </div>
         </div>
       </div>
