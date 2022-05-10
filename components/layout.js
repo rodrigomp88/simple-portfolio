@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import Navbar from "./navbar";
 import NProgress from "nprogress";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, footer = true }) => {
   const router = useRouter();
 
   useEffect(() => {
@@ -26,12 +26,14 @@ const Layout = ({ children }) => {
       <Navbar />
       <main className="container py-4">{children}</main>
 
-      <footer className="bg-dark text-light text-center">
-        <div className="container p-4">
-          <h3>&copy; Rodrigo Pinea</h3>
-          <p>2017 - {new Date().getFullYear()}</p>
-        </div>
-      </footer>
+      {footer && (
+        <footer className="bg-dark text-light text-center">
+          <div className="container p-4">
+            <h3>&copy; Rodrigo Pinea</h3>
+            <p>2017 - {new Date().getFullYear()}</p>
+          </div>
+        </footer>
+      )}
     </>
   );
 };

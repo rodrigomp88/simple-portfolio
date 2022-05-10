@@ -3,7 +3,7 @@ import Link from "next/link";
 import Layout from "../components/layout";
 
 const error404 = () => (
-  <Layout>
+  <Layout footer={false}>
     <div className="text-center">
       <h1 className="text-danger">Error 404</h1>
       <p>
